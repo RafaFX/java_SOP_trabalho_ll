@@ -2,6 +2,8 @@ package java_SOP_trabalho_II;
 
 import java.util.List;
 
+
+
 public class FilaPronto {
 	
 	List<Processo> fila;
