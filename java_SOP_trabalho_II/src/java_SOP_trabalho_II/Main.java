@@ -62,14 +62,14 @@ public class Main {
         
         while(!filaDePronto.fila.isEmpty()){
         	
-        	System.out.println("PROCESSADORRRRRRRRRRR " +processador);
+        	System.out.println(processador);
         	System.out.println("+++++++++++++++++++++++++++");
         	System.out.println(filaDePronto.fila);
-        	System.out.println("+++++++++++++++++++++++++++");
+        	
         	
         	if(processador == null) {
         		
-        		System.out.println("ENTREI NA VERIFICAÇÃO SE O PROCESSADOR ESTÁ NULO E IREI REMOVER DA FILA DE PRONTO O INDEX 0");
+        		
         		
         		processador = filaDePronto.fila.remove(0);
         		
@@ -82,7 +82,7 @@ public class Main {
         	
         	if(processador != null) {
         		
-        		System.out.println("ENTREI NA VERIFICAÇÃO DSE O PROCESSADOR É DIFERENTE DE NULO E IREI REMOVER -1 DO INDEX 0");
+        		
         		
         		processador.removeElement();
         		System.out.println("processador.tamanho "+processador.tamanho);
@@ -95,9 +95,7 @@ public class Main {
         	System.out.println(filaDePronto.fila);
         	System.out.println("***************************************");
         	
-        	if(!(processador.tamanho.get(0) != 0)) {
-        		
-        		System.out.println("ENTREI NA VERIFICAÇÃO SE O INDEX 0 É 0 E IREI REMOVER O ELEMENTO DO ARRAY LIST");
+        	if(!processador.tamanho.isEmpty()) && (!(processador.tamanho.get(0) != 0)) 
         		
         		processador.tamanho.remove(0);
         		
