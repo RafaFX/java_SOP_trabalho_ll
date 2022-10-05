@@ -95,7 +95,7 @@ public class Main {
         	System.out.println(filaDePronto.fila);
         	System.out.println("***************************************");
         	
-        	if(!processador.tamanho.isEmpty()) && (!(processador.tamanho.get(0) != 0)) 
+        	if(!processador.tamanho.isEmpty() && processador.tamanho.get(0) < 1){
         		
         		processador.tamanho.remove(0);
         		
